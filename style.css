@@ -1,13 +1,28 @@
-html {}
-body {}
+html {
+    background-color: #2F4F4F;
+}
+main {
+    background-color:#A9A9A9;
+    border: 1px solid;
+    border-color: #535353;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px var(--black);
+    justify-items: center;
+    margin: 20px auto;
+    padding: 15px;
+    width: fit-content;
+}
 
 #title {
+    color: #FFFFE0;
+    
     margin-top: 80px;
     margin-bottom: 25px;
     text-align: center;
     font-family: monospace;
     font-weight: bold;
-    font-size: 35px;
+    font-variant: small-caps;
+    font-size: 50px;
 }
 
 #container {
@@ -45,6 +60,7 @@ body {}
 
 .display {
     margin: 2px;
+    background: #E6E6FA;
     border: 1px solid gray;
     border-radius: 4px;
     padding-right: 5px;
@@ -55,8 +71,11 @@ body {}
     font-size: 25px;
 }
 .button {
+    display:inline-block; /*added*/
+    color:#444; /*added*/
+    background:#DDD; /*added*/
     margin: 2px;
-    border: 1px solid gray;
+    border: 1px solid #CCC;
     border-radius: 4px;
     text-align: center;
     vertical-align: middle;
@@ -64,8 +83,14 @@ body {}
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: x-large;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer; /*added*/
 }
-
+.button:active {
+    color:rgba(0,0,0,0.8);
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+    transform: scale(0.95);
+}
 #buttonEqual {
     line-height: 136px;
 }
