@@ -88,7 +88,7 @@ main {
 }
 .button:active {
     color:rgba(0,0,0,0.8);
-    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 5px -1px rgba(0,0,0,1);
     transform: scale(0.95);
 }
 #buttonEqual {
